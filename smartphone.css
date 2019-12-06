@@ -39,7 +39,4 @@
 
 /* The screen (or content) of the device */
 .smartphone .content {
-  width: 250px;
-  height: 450px;
-  background: white;
 }

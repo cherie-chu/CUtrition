@@ -3,15 +3,64 @@
 <head>
 <link rel="stylesheet" type="text/css" href="smartphone.css">
 <style>
+	.logo {
+		height: 175px;
+		width: 175px;
+		display: block;
+		margin: auto;
+		position: absolute;
+	  top: 40%;
+	  left: 50%;
+	  transform: translate(-50%,-50%);
+	}
+	.loadbar-outline {
+		border-radius: 25px;
+		border: 1px solid black;
+	  height: 7px;
+	  margin: 290px 24px 0px 24px;
+	}
+	#loadbar {
+		border-radius: 100px;
+	  width: 0%;
+	  height: 7px;
+	  background-color: #186EC0;
+	  margin: -8px 25px 0px 25px;
+	}
 </style>
 </head>
-<body>
+<body onload="load()">
 
 <div class="smartphone">
-  <div class="content" onclick="location.href='./login.html';">
-    <h1>loading</h1>
+  <div class="content" >
+  	<!--onclick="location.href='./login.html';"-->
+    <img class="logo" src="./img/logo.png">
+    <div class="loadbar-outline"></div>
+    <div id="loadbar"></div>
   </div>
 </div>
+
+<script>
+	var i = 0;
+	function load() {
+		console.log("GI")
+	  if (i == 0) {
+	    i = 1;
+	    var elem = document.getElementById("loadbar");
+	    var width = 0;
+	    var id = setInterval(frame, 30);
+	    function frame() {
+	      if (width >= 80) {
+	        clearInterval(id);
+	        i = 0;
+	        location.replace("./login.html")
+	      } else {
+	        width++;
+	        elem.style.width = width + "%";
+	      }
+	    }
+	  }
+	}
+</script>
 
 </body>
 </html>
