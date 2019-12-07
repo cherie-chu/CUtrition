@@ -40,3 +40,25 @@
 /* The screen (or content) of the device */
 .smartphone .content {
 }
+
+.nav {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #1D497D;
+  color: white;
+  font-weight: 500;
+  display: block;
+  margin: auto;
+}
+
+.navitem {
+}
+
+.nav:hover {
+  cursor: pointer;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
