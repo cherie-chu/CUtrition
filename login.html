@@ -3,14 +3,48 @@
 <head>
 <link rel="stylesheet" type="text/css" href="smartphone.css">
 <style>
+	.content {
+		width: 250px;
+		height: 450px;
+		background-color: #1D497D;
+	}
+
+	.login-image {
+		height: 275px;
+		display: block;
+		margin: auto;
+		position: absolute;
+		top: 45%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+
+	.uni {
+		width: 95px;
+		transform: translate(98px,204px);
+	}
+
+	.password {
+		width: 95px;
+		transform: translate(-7px,226px);
+	}
+
+	.profile {
+		height: 18px;
+		width: 39px;
+		transform: translate(138px,235px);
+		cursor: pointer;
+	}
 </style>
 </head>
 <body>
 
 <div class="smartphone">
   <div class="content">
-    login
-    <button onclick="location.href='./profile.html';">profile</button>
+    <img class="login-image" src="./img/login.png">
+    <input class="uni">
+    <input class="password" type="password">
+    <div class='profile' onclick="location.href='./profile.html';"></div>
   </div>
 </div>
 
