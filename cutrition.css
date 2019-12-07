@@ -41,16 +41,27 @@
 .smartphone .content {
 }
 
+.content {
+  width: 250px;
+  height: 450px;
+}
+
+.active {
+  color: #A4B6CB;
+}
+
 .nav {
   font-family: 'Montserrat', sans-serif;
   background-color: #1D497D;
   color: white;
   font-weight: 500;
-  display: block;
-  margin: auto;
 }
 
 .navitem {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  margin: 5px 0px;
 }
 
 .nav:hover {
@@ -61,4 +72,5 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 25px;
+  margin: 10px;
 }
