@@ -37,13 +37,22 @@
   border-radius: 50%;
 }
 
-/* The screen (or content) of the device */
-.smartphone .content {
-}
-
 .content {
   width: 250px;
   height: 450px;
+}
+
+.info {
+  overflow: scroll;
+  margin: 10px;
+}
+
+.one {
+  height: 360px;
+}
+
+.two {
+  height: 320px;
 }
 
 .active {
@@ -73,4 +82,5 @@ h1 {
   font-weight: 700;
   font-size: 25px;
   margin: 10px;
+  text-align: center;
 }
