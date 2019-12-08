@@ -4,24 +4,82 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="cutrition.css">
 <style>
+  .btn{
+    position: absolute;
+    background: #1D497D;
+    border: 1px solid #1D497D;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+  }
+  .btn:hover{
+    background: #5ca3f7;
+    border: 1px solid #5ca3f7;
+  }
+  #menu{
+    margin-left: 100px;
+    margin-top: 315px;
+    position: absolute;
+    background: #3587e8;
+    border: 1px solid #3587e8;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+  }
+  #ferris{
+    margin-left: 65px;
+    margin-top: 265px;
+  }
+  #johnjay{
+    margin-left: 146px;
+    margin-top: 280px;
+  }
+  #jj{
+    margin-left: 200px;
+    margin-top: 298px;
+  }
+  #diana{
+    margin-left: 28px;
+    margin-top: 38px;
+  }
+  #hewitt{
+    margin-left: 10px;
+    margin-top: 150px;
+  }
+  .map-image{
+    height: 290px;
+		display: block;
+		margin: 0%;
+    margin-top: 18%;
+		position: absolute;
+		top: 45%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+  }
 </style>
 </head>
 <body>
 
 <div class="smartphone">
   <div class="content">
-  	<div class="nav">
+
+    <div class="nav">
   		<span class="navitem" onclick="location.href='./profile.html';">Profile</span>
   		<span class="navitem active" onclick="location.href='./halls.html';">Halls</span>
   		<span class="navitem" onclick="location.href='./search.html';">Search</span>
   	</div>
 
+    <img class = "map-image" src="./img/campusmap.png"></img>
+
     <h1>Halls</h1>
+    <h2>Choose a dining hall</h2>
 
     <div class="info one">
-    	<button onclick="location.href='./menu.html';">menu</button>
-	</div>
-    
+      <button id = "ferris" class="btn" onclick ="location.href='./menu.html';">Ferris</button>
+      <button id = "johnjay" class="btn" onclick ="location.href='./menu.html';">John Jay</button>
+      <button id = "jj" class="btn" onclick ="location.href='./menu.html';">JJ's</button>
+      <button id = "diana" class="btn" onclick ="location.href='./menu.html';">Diana</button>
+      <button id = "hewitt" class="btn" onclick ="location.href='./menu.html';">Hewitt</button>
+    	<button id = "menu" class="btn" onclick="location.href='./menu.html';">Menu</button>
+    </div>
   </div>
 </div>
 
