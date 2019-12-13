@@ -9,7 +9,6 @@
   border-radius: 36px;
 }
 
-
 /* The horizontal line on the top of the device */
 .smartphone:before {
   content: '';
