@@ -1,9 +1,70 @@
 <!DOCTYPE html>
+<!-- image sources:
+qr code image: https://www.qr-code-generator.com/wp-content/themes/qr/new_structure/markets/core_market_full/generator/dist/generator/assets/images/websiteQRCode_noFrame.png
+search bar image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSjgfRECnGR0qUDEA3WH8dTjfqKZ2TIysHLyN36_VY6eKSiWiVnA&s
+-->
 <html>
 <head>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="cutrition.css">
 <style>
+  .btn{
+    position: absolute;
+    background: #1D497D;
+    border: 1px solid #1D497D;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    transform: translate(90px, -205px);
+  }
+  .btn:hover{
+    background: #5ca3f7;
+    border: 1px solid #5ca3f7;
+  }
+  .txt{
+    font-size: 13px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .search-bar{
+    width: 220px;
+    height: 95px;
+    margin-left: 17px;
+    transform: translateY(-20px);
+  }
+  .search-text {
+		width: 150px;
+    height: 20px;
+		transform: translate(42px,-85px);
+		font-family: 'Montserrat', sans-serif;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+	}
+  #search-submit{
+    visibility:hidden;
+  }
+  .or{
+    font-weight:700;
+    font-size: 17px;
+    transform: translateY(-60px);
+  }
+  .scan-txt{
+    font-size: 12px;
+    transform: translateY(-55px);
+  }
+  .qr-code{
+    width: 175px;
+    height: 200px;
+    transform: translate(38px, -48px);
+  }
+  .scan-code{
+    width: 150px;
+    height: 150px;
+    transform: translate(50px, -210px);
+    background: transparent;
+    border: none !important;
+    cursor: pointer;
+  }
+
 </style>
 </head>
 <body>
@@ -18,10 +79,24 @@
   	</div>
 
     <h1>Search</h1>
-    
+
+    <div class = "txt">Search for a dish:</div>
+    <img class = "search-bar" src = "./img/searchbar.png">
+    <form action = "./searchfood.html">
+    <input class = "search-text" placeholder="Search">
+    <input id = "search-submit" type = "submit" value = "Submit">
+    </form>
+
+    <div class = "txt or">OR</div>
+    <div class = "txt scan-txt">Scan a QR code in the box and wait:</div>
+    <img class = "qr-code" src = "./img/qrcode.png">
+    <button class = "scan-code" onclick="location.href='./searchfood.html';"></button>
+
+
     <div class="info one">
-    	<button onclick="location.href='./searchfood.html';">food</button>
+    	<button class = "btn" onclick="location.href='./menu.html';">Cancel</button>
     </div>
+
   </div>
 </div>
 
