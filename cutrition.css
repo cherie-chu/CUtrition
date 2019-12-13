@@ -53,6 +53,7 @@
 
 .two {
   height: 320px;
+  margin: 0;
 }
 
 .active {
@@ -77,6 +78,31 @@
   cursor: pointer;
 }
 
+.user_icon {
+  width: 25px;
+  float: left;
+  margin-top: -0.2em;
+}
+
+.blog_title {
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  /*float: right;*/
+  margin: 0px;
+  padding-left: 10px;
+}
+
+.blog_post {
+  height: 20px;
+  padding: 10px;
+  /*border-top: 2px solid;
+  border-bottom: 2px solid;*/
+}
+
+hr {
+  margin: 0px;
+}
+
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -91,8 +117,4 @@ h2 {
   font-size: 13px;
   margin-top: 0px;
   text-align: center;
-}
-
-div {
-  font-family: 'Montserrat', sans-serif;
 }
