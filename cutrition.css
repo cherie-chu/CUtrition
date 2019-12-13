@@ -52,7 +52,7 @@
 }
 
 .two {
-  height: 320px;
+  height: 343px;
   margin: 0;
 }
 
@@ -78,6 +78,8 @@
   cursor: pointer;
 }
 
+/*Blog Posts Page*/
+
 .user_icon {
   width: 25px;
   float: left;
@@ -95,13 +97,28 @@
 .blog_post {
   height: 20px;
   padding: 10px;
-  /*border-top: 2px solid;
-  border-bottom: 2px solid;*/
+}
+
+.button_headers {
+  display: inline-block;
+  width: 100%;
 }
 
 hr {
   margin: 0px;
 }
+
+.add_post {
+  margin: 0px; 
+  width: 50px;
+}
+
+.add_post_combo {
+  float: right;
+  width: 100px;
+}
+
+/*General*/
 
 h1 {
   font-family: 'Montserrat', sans-serif;
