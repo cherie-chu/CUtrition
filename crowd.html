@@ -4,6 +4,47 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="cutrition.css">
 <style>
+  .btn{
+    position: absolute;
+    background: #1D497D;
+    border: 1px solid #1D497D;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    transform: translate(10px, 300px);
+  }
+  .btn:hover{
+    background: #5ca3f7;
+    border: 1px solid #5ca3f7;
+  }
+  .category-txt{
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: underline;
+    transform: translate(15px, 15px);
+    font-family: 'Montserrat', sans-serif;
+  }
+  .weekly-txt{
+    font-size: 12px;
+    font-weight: 700;
+    transform: translate(15px, 17px);
+    font-family: 'Montserrat', sans-serif;
+  }
+  .wait-today{
+    width: 230px;
+    height: 115px;
+    transform: translate(16px, 19px);
+  }
+  .weekly{
+    width: 190px;
+    height: 65px;
+    transform: translate(33px, 16px);
+  }
+  .closed{
+    color: red;
+  }
+  .open{
+    color: green;
+  }
 </style>
 </head>
 <body>
@@ -25,9 +66,26 @@
   	</div>
 
     <div class="info two">
-      <button onclick="location.href='./menu.html';">back</button>
+      <div class="category-txt">TODAY</div>
+      <div class="open weekly-txt">Open</div>
+      <img class= "wait-today" src = "./img/wait-today.png">
+      <div class="category-txt">WEEKLY</div>
+      <div class="weekly-txt">Monday</div>
+      <img class="weekly" src="./img/monday.png">
+      <div class="weekly-txt">Tuesday</div>
+      <img class="weekly" src="./img/tuesday.png">
+      <div class="weekly-txt">Wednesday</div>
+      <img class="weekly" src="./img/wednesday.png">
+      <div class="weekly-txt">Thursday</div>
+      <img class="weekly" src="./img/thursday.png">
+      <div class="weekly-txt">Friday</div>
+      <img class="weekly" src="./img/Friday.png">
+      <div class="weekly-txt">Saturday</div>
+      <img class="weekly" src="./img/saturday.png">
+      <div class="weekly-txt">Sunday</div>
+      <div class="closed weekly-txt">Closed on Sunday's</div>
 		</div>
-		
+
   </div>
 </div>
 
