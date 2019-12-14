@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="cutrition.css">
+<style>
+</style>
+</head>
+<body>
+
+<div class="smartphone">
+  <div class="content">
+
+  	<div class="nav">
+  		<span class="navitem" onclick="location.href='./profile.html';">Profile</span>
+  		<span class="navitem active" onclick="location.href='./halls.html';">Halls</span>
+  		<span class="navitem" onclick="location.href='./search.html';">Search</span>
+  	</div>
+
+    <h1>Blog</h1>
+
+    <div class="nav">
+  		<span class="navitem" onclick="location.href='./menu.html';">Menu</span>
+  		<span class="navitem" onclick="location.href='./crowd.html';">Crowd</span>
+  		<span class="navitem active" onclick="location.href='./blog.html';">Blog</span>
+  	</div>
+
+    <div class="info two">
+
+        <!--<div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+        <hr>
+        <div class="blog_post">
+            <img class="user_icon" src="round-account-button-with-user-inside.png" alt="User Icon">
+            <h5 class="blog_title">I found WHAT in my food??</h5>
+            <h6 class="username">By John Smith</h6>
+        </div>
+        <hr class="blogdiv">
+
+        <p class="article">
+            <span class="tab"></span> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+        </p>
+        <p class="article">
+            <span class="tab"></span> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+        </p>
+
+        <div class="comment_bar">
+            <hr class="blogdiv">
+            <h5 class="blog_title" style="margin:5px;">Comments</h5>
+            <button style="float:right">Add</button>
+        </div>
+        <hr>
+        <div class="all_comments">
+            <div class="comment">
+                <img class="user_icon" style="width:20px;margin:0px;" src="round-account-button-with-user-inside.png" alt="User Icon">
+                <p class="comment_user">
+                    Johnny 
+                    <b class="comment_text">
+                        How did that even happen??
+                    </b>
+                </p>
+                <p class="comment_reply">Reply</p>
+            </div>
+            <hr class="blogdiv">
+            <div class="comment">
+                <img class="user_icon" style="width:20px;margin:0px;" src="round-account-button-with-user-inside.png" alt="User Icon">
+                <p class="comment_user">
+                    Matthew 
+                    <b class="comment_text">
+                        Idk but that's kinda tasty tbh...
+                    </b>
+                </p>
+                <p class="comment_reply">Reply</p>
+            </div>
+            <hr class="blogdiv">
+            <div class="comment" style="margin-left:20px;">
+                <img class="user_icon" style="width:20px;margin:0px;" src="round-account-button-with-user-inside.png" alt="User Icon">
+                <p class="comment_user">
+                    Sarah 
+                    <b class="comment_text">
+                        what is wrong with you
+                    </b>
+                </p>
+                <p class="comment_reply">Reply</p>
+            </div>
+            <hr class="blogdiv">
+            <div class="comment" style="margin-left:20px;">
+                <img class="user_icon" style="width:20px;margin:0px;" src="round-account-button-with-user-inside.png" alt="User Icon">
+                <p class="comment_user">
+                    Matthew 
+                    <b class="comment_text">
+                        hey man I like what I like
+                    </b>
+                </p>
+                <p class="comment_reply">Reply</p>
+            </div>
+            <hr class="blogdiv">
+            <div class="comment">
+                <img class="user_icon" style="width:20px;margin:0px;" src="round-account-button-with-user-inside.png" alt="User Icon">
+                <p class="comment_user">
+                    Sonja 
+                    <b class="comment_text">
+                        GROSS!!!
+                    </b>
+                </p>
+                <p class="comment_reply">Reply</p>
+            </div>
+            <hr class="blogdiv">
+        </div>
+    </div>
+    </div>
+
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script>
+    
+    $(document).ready (function() {
+        
+        var commentOn = false;
+    
+        $(".comment_bar").click(function() {
+
+            if (commentOn) {
+
+                commentOn = false;
+                $(".comment_bar").css("margin-top", "0px");
+                $(".all_comments").css("display", "block");
+                
+            } else {
+
+                commentOn = true; 
+                $(".comment_bar").css("margin-top", "105px");
+                $(".all_comments").css("display", "none");
+
+            }
+        });
+        
+    });
+    
+    
+</script>
+</html>
+
+
+

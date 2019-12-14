@@ -83,7 +83,7 @@
 .user_icon {
   width: 25px;
   float: left;
-  margin-top: -0.2em;
+  margin-bottom: 10px;
 }
 
 .blog_title {
@@ -104,10 +104,6 @@
   width: 100%;
 }
 
-hr {
-  margin: 0px;
-}
-
 .add_post {
   margin: 0px;
   width: 50px;
@@ -116,6 +112,54 @@ hr {
 .add_post_combo {
   float: right;
   width: 100px;
+}
+
+.username {
+  margin: 0px;
+  margin-left: 35px;
+  font-weight: 500;
+}
+
+.blogdiv {
+  margin-top: 5px;
+}
+
+.article {
+  margin: 10px;
+}
+
+.all_comments {
+  display: none;
+}
+
+.comment {
+  height: 20px;
+  padding: 5px;
+  padding-left: 15px;
+}
+
+.comment_user {
+  padding-left: 30px;
+  margin-bottom: 4px;
+}
+
+.comment_text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.comment_reply {
+  padding-left: 30px;
+  color: grey;
+  font-size: 5px;
+}
+
+.comment_bar {
+  margin-top: 105px;
+}
+
+.all_comments {
+  display: none;
 }
 
 /*General*/
@@ -134,4 +178,28 @@ h2 {
   font-size: 13px;
   margin-top: 0px;
   text-align: center;
+}
+
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 8px;
+  margin-top: 0px;
+  /*text-align: center;*/
+}
+
+hr {
+  margin: 0px;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif; /*MAKE THIS SERIF!!!*/
+  font-weight: 700;
+  font-size: 8px;
+  margin-top: 0px;
+  text-align: justify;
+}
+
+.tab {
+  margin-left: 10px;
 }
