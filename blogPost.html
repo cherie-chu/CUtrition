@@ -131,19 +131,15 @@
         var commentOn = false;
     
         $(".comment_bar").click(function() {
-
             if (commentOn) {
-
                 commentOn = false;
-                $(".comment_bar").css("margin-top", "0px");
-                $(".all_comments").css("display", "block");
-                
-            } else {
-
-                commentOn = true; 
                 $(".comment_bar").css("margin-top", "105px");
                 $(".all_comments").css("display", "none");
-
+                
+            } else {
+                commentOn = true; 
+                $(".comment_bar").css("margin-top", "50px");
+                $(".all_comments").css("display", "block");
             }
         });
         
@@ -152,6 +148,4 @@
     
 </script>
 </html>
-
-
 
