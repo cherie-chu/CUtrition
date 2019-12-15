@@ -4,7 +4,118 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="cutrition.css">
 <style>
-
+.btn{
+  background: #1D497D;
+  border: 1px solid #1D497D;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  transform: translate(194px, 11px);
+}
+.btn:hover{
+  background: #5ca3f7;
+  border: 1px solid #5ca3f7;
+}
+.text{
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+#menu{
+  transform:translateY(-15px);
+  width: 150px;
+}
+#allergies{
+  transform: translateY(-10px);
+}
+.menu-new{
+  overflow: auto;
+}
+.menu-img{
+  width: 71px;
+  height: 60px;
+}
+.contains{
+  overflow:hidden;
+  height: 125px;
+}
+.contains2{
+  overflow:hidden;
+  height: 100px;
+}
+.over{
+  overflow-x: auto;
+}
+.new-text{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  transform: translate(-15px,-15px);
+}
+.alert{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  color: red;
+  transform: translate(-15px,-110px);
+}
+.mid{
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  transform: translateY(-13px);
+}
+.box{
+  width: 95px;
+  height: 95px;
+}
+.image1{
+  transform: translate(10px);
+}
+.image2{
+  transform: translate(103px, -94px);
+}
+.image3{
+  transform: translate(196px, -188.6px);
+}
+.image4{
+  transform: translate(289px, -283.6px);
+}
+.image5{
+  transform: translate(10px,-15px);
+}
+.image6{
+  transform: translate(103px,-109px);
+}
+.image7{
+  transform: translate(196px,-203px);
+}
+.image8{
+  transform: translate(289px,-297px);
+}
+.search-bar{
+  width: 255px;
+  height: 95px;
+  margin-left: 17px;
+  transform: translate(-20px,-30px);
+}
+.search-text {
+  width: 175px;
+  height: 20px;
+  transform: translate(30px,-95px);
+  font-family: 'Montserrat', sans-serif;
+  border: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+#search-submit{
+  visibility:hidden;
+}
+.menu-content{
+  transform: translateY(-80px);
+}
 </style>
 </head>
 <body>
@@ -26,29 +137,82 @@
       <span class="navitem" onclick="location.href='./blog.html';">Blog</span>
     </div>
 
-    <div class="info two">
-      <button onclick="location.href='./halls.html';">back</button>
-      <button onclick="location.href='./hallfood.html';">food</button>
-      <button onclick="location.href='./filter.html';">filter</button>
-   
-       <div id="menu">Today's Menu</div>
-       <input type="text" class="myInput" placeholder="Search">
-       <div id="favorites">What's New?</div>
-       <div class="info-three">
-      
-        <div>your content</div>
-        <div>your content</div>
-        <div>your content</div>
-         
+<div class="info two">
+      <button class ="btn" onclick="location.href='./filter.html';">Filter</button>
+
+       <div id="menu" class="text">TODAY'S MENU</div>
+
+       <img class = "search-bar" src = "./img/searchbar.png">
+       <form action = "./searchfood.html">
+       <input class = "search-text" placeholder="Search">
+       <input id = "search-submit" type = "submit" value = "Submit">
+       </form>
+       <div class="menu-content">
+       <div id="favorites" class = "text">NEW</div>
+       <div class="contains over">
+       <div class = "box image1">
+         <img class = "menu-new info-three menu-img" src = "./img/meatloaf.png" onclick="location.href='./searchfood.html';">
+         <div class = "menu-new info-three new-text">Meatloaf</div>
+         <div class = "menu-new info-three alert">Contains meat</div>
        </div>
-       <div id="allergies">Regular</div>
-        <div class="info-three">
-      
-        <div>your content</div>
-        <div>your content</div>
-        <div>your content</div>
-         
+       <div class = "box image2">
+         <img class = "menu-new info-three menu-img" src = "./img/ricepilaf.png"onclick="location.href='./searchfood.html';">
+         <div class = "menu-new info-three new-text">Rice Pilaf</div>
        </div>
+       <div class = "box image3">
+         <img class = "menu-new info-three menu-img" src = "./img/corn.png"onclick="location.href='./searchfood.html';">
+         <div class = "menu-new info-three new-text">Grilled Corn</div>
+       </div>
+       <div class = "box image4">
+         <img class = "menu-new info-three menu-img" src = "./img/veganmeatballs.png"onclick="location.href='./searchfood.html';">
+         <div class = "menu-new info-three new-text">Vegan Meatballs</div>
+       </div>
+      </div>
+
+       <div id="allergies" class = "text">REGULARS</div>
+       <div class="mid">Salads</div>
+       <div class="contains2 over">
+       <div class = "box image5">
+         <img class = "menu-new info-three menu-img" src = "./img/lettuce.png"onclick="location.href='./searchfood.html';">
+         <div class = "menu-new info-three new-text">Lettuce</div>
+       </div>
+       <div class = "box image6">
+         <img class = "menu-new info-three menu-img" src = "./img/broccoli.png"onclick="location.href='./searchfood.html';">
+         <div class = "menu-new info-three new-text">Broccoli</div>
+       </div>
+       <div class = "box image7">
+         <img class = "menu-new info-three menu-img" src = "./img/peppers.png"onclick="location.href='./searchfood.html';">
+         <div class = "menu-new info-three new-text">Peppers</div>
+       </div>
+       <div class = "box image8">
+         <img class = "menu-new info-three menu-img" src = "./img/carrots.png"onclick="location.href='./searchfood.html';">
+         <div class = "menu-new info-three new-text">Carrots</div>
+       </div>
+      </div>
+
+      <div class="mid">Desserts</div>
+      <div class="contains2 over">
+      <div class = "box image5">
+        <img class = "menu-new info-three menu-img" src = "./img/chocolate.png"onclick="location.href='./searchfood.html';">
+        <div class = "menu-new info-three new-text">Chocolate Chips</div>
+      </div>
+      <div class = "box image6">
+        <img class = "menu-new info-three menu-img" src = "./img/sugar.png"onclick="location.href='./searchfood.html';">
+        <div class = "menu-new info-three new-text">Sugar</div>
+      </div>
+      <div class = "box image7">
+        <img class = "menu-new info-three menu-img" src = "./img/eggs.png"onclick="location.href='./searchfood.html';">
+        <div class = "menu-new info-three new-text">Eggs</div>
+        <div class = "menu-new info-three alert">Contains eggs</div>
+      </div>
+      <div class = "box image8">
+        <img class = "menu-new info-three menu-img" src = "./img/flour.png"onclick="location.href='./searchfood.html';">
+        <div class = "menu-new info-three new-text">Flour</div>
+        <div class = "menu-new info-three alert">Contains gluten</div>
+      </div>
+     </div>
+    </div>
+    </div>
 
     </div>
 
