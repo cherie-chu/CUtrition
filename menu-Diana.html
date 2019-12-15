@@ -116,6 +116,50 @@
 .menu-content{
   transform: translateY(-80px);
 }
+.modal{
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 250px;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  transform: translate(515px, 176px);
+}
+.modal-content{
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #88;
+  width: 100px;
+  height: 110px;
+  transform: translateY(-10px);
+}
+.modal-text{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+}
+.favorite-food{
+  font-weight: bold;
+  color: #1D497D;
+}
+.close{
+  color: #aaaaaa;
+  float: right;
+  transform: translate(10px, -10px);
+  font-size: 13px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus{
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 </style>
 </head>
 <body>
@@ -138,6 +182,15 @@
     </div>
 
 <div class="info two">
+
+    <!--Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <span class="modal-text">One of your favorite items, </span><span class="modal-text favorite-food">Grilled Corn</span><span class="modal-text"> is being served at Hewitt today!</span>
+      </div>
+    </div>
+
       <button class ="btn" onclick="location.href='./filter.html';">Filter</button>
 
        <div id="menu" class="text">TODAY'S MENU</div>
@@ -153,6 +206,7 @@
        <div class = "box image1">
          <img class = "menu-new info-three menu-img" src = "./img/meatloaf.png" onclick="location.href='./searchfood.html';">
          <div class = "menu-new info-three new-text">Meatloaf</div>
+         <div class = "menu-new info-three alert">Contains meat</div>
        </div>
        <div class = "box image2">
          <img class = "menu-new info-three menu-img" src = "./img/ricepilaf.png"onclick="location.href='./searchfood.html';">
@@ -218,6 +272,27 @@
   </div>
 </div>
 
+<script src= "https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
+
+$(document).ready(function(){
+  modal.style.display = "block";
+
+  span.onclick=function(){
+    modal.style.display = "none";
+  }
+
+  window.onclick=function(event){
+    if (event.target==modal){
+      modal.style.display = "none";
+    }
+  }
+});
+
+</script>
 
 </body>
 </html>
