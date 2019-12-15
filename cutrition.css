@@ -60,7 +60,9 @@
   overflow: scroll;
   margin: 10px;
   height: 100px;
-  width: 300px;
+  width: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
 }
 
 .active {
