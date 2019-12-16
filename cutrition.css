@@ -131,3 +131,14 @@ p {
 .tab {
   margin-left: 10px;
 }
+
+.shadow {
+  height: 5px;
+  border: 0;
+  box-shadow: inset 0 5px 5px -5px rgba(0, 0, 0, 0.2);
+}
+
+.background {
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.1); 
+}

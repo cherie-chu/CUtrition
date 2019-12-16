@@ -81,11 +81,15 @@
     }
 
     .comment_bar {
-    margin-top: 105px;
+    /*margin-top: 100px;*/
     }
 
     .all_comments {
     display: none;
+    }
+
+    .back_comment {
+        height:85px;
     }
 
 </style>
@@ -118,7 +122,7 @@
             <h5 class="blog_title">I found WHAT in my food??</h5>
             <h6 class="username">By John Smith</h6>
         </div>
-        <hr class="blogdiv">
+        <hr class="blogdiv shadow">
 
         <p class="article">
             <span class="tab"></span> 
@@ -138,12 +142,14 @@
             mollit anim id est laborum.
         </p>
 
+        <div class="background back_comment"></div>
+        
         <div class="comment_bar">
-            <hr class="blogdiv">
+            <hr class="shadow">
             <h5 class="blog_title" style="margin:5px;">Comments</h5>
             <button style="float:right">Add</button>
         </div>
-        <hr>
+        <hr class="shadow">
         <div class="all_comments">
             <div class="comment">
                 <img class="user_icon" style="width:20px;margin:0px;" src="img/round-account-button-with-user-inside.png" alt="User Icon">
@@ -155,7 +161,7 @@
                 </p>
                 <p class="comment_reply">Reply</p>
             </div>
-            <hr class="blogdiv">
+            <hr class="blogdiv shadow">
             <div class="comment">
                 <img class="user_icon" style="width:20px;margin:0px;" src="img/round-account-button-with-user-inside.png" alt="User Icon">
                 <p class="comment_user">
@@ -166,7 +172,7 @@
                 </p>
                 <p class="comment_reply">Reply</p>
             </div>
-            <hr class="blogdiv">
+            <hr class="blogdiv shadow">
             <div class="comment" style="margin-left:20px;">
                 <img class="user_icon" style="width:20px;margin:0px;" src="img/round-account-button-with-user-inside.png" alt="User Icon">
                 <p class="comment_user">
@@ -177,7 +183,7 @@
                 </p>
                 <p class="comment_reply">Reply</p>
             </div>
-            <hr class="blogdiv">
+            <hr class="blogdiv shadow">
             <div class="comment" style="margin-left:20px;">
                 <img class="user_icon" style="width:20px;margin:0px;" src="img/round-account-button-with-user-inside.png" alt="User Icon">
                 <p class="comment_user">
@@ -188,7 +194,7 @@
                 </p>
                 <p class="comment_reply">Reply</p>
             </div>
-            <hr class="blogdiv">
+            <hr class="blogdiv shadow">
             <div class="comment">
                 <img class="user_icon" style="width:20px;margin:0px;" src="img/round-account-button-with-user-inside.png" alt="User Icon">
                 <p class="comment_user">
@@ -217,12 +223,12 @@
         $(".comment_bar").click(function() {
             if (commentOn) {
                 commentOn = false;
-                $(".comment_bar").css("margin-top", "105px");
+                $(".back_comment").css("height", "85px");
                 $(".all_comments").css("display", "none");
                 
             } else {
                 commentOn = true; 
-                $(".comment_bar").css("margin-top", "50px");
+                $(".back_comment").css("height", "65px");
                 $(".all_comments").css("display", "block");
             }
         });
