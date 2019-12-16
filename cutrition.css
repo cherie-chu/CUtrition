@@ -142,3 +142,7 @@ p {
   height: 10px;
   background-color: rgba(0, 0, 0, 0.1); 
 }
+
+input:focus, textarea:focus {
+  outline: none;
+}

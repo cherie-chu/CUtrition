@@ -20,7 +20,7 @@ columbia campus map: https://visit.columbia.edu/sites/default/files/styles/cu_cr
   }
   #menu{
     margin-left: 100px;
-    margin-top: 315px;
+    margin-top: 323px;
     position: absolute;
     background: #3587e8;
     border: 1px solid #3587e8;
@@ -37,7 +37,7 @@ columbia campus map: https://visit.columbia.edu/sites/default/files/styles/cu_cr
   }
   #jj{
     margin-left: 200px;
-    margin-top: 298px;
+    margin-top: 250px;
   }
   #diana{
     margin-left: 28px;
@@ -51,12 +51,26 @@ columbia campus map: https://visit.columbia.edu/sites/default/files/styles/cu_cr
     height: 290px;
 		display: block;
 		margin: 0%;
-    margin-top: 18%;
+    margin-top: 35px;
 		position: absolute;
-		top: 45%;
+		top: 50%;
 		left: 50%;
 		transform: translate(-50%,-50%);
   }
+
+.choose_hall {
+  margin: 5px;
+  margin-top: 1px;
+  font-size: 13px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bar {
+  margin-top: 310px;
+}
+
+
 </style>
 </head>
 <body>
@@ -72,16 +86,23 @@ columbia campus map: https://visit.columbia.edu/sites/default/files/styles/cu_cr
 
     <img class = "map-image" src="./img/campusmap.png"></img>
 
-    <h1>Halls</h1>
-    <h2>Choose a dining hall</h2>
+    <h1 style="margin:5px;">Halls</h1>
+    <hr class="shadow">
+
+    <div class="choose_hall">Choose a dining hall:</div>
+    <div class="background"></div>
+    
+    
 
     <div class="info one">
       <button id = "ferris" class="btn" onclick ="location.href='./menu-Ferris.html';">Ferris</button>
-      <button id = "johnjay" class="btn" onclick ="location.href='./menu-JohnJay.html';">John Jay</button>
       <button id = "jj" class="btn" onclick ="location.href='./menu-JJ.html';">JJ's</button>
+      <button id = "johnjay" class="btn" onclick ="location.href='./menu-JohnJay.html';">John Jay</button>
       <button id = "diana" class="btn" onclick ="location.href='./menu-Diana.html';">Diana</button>
       <button id = "hewitt" class="btn" onclick ="location.href='./menu-Hewitt.html';">Hewitt</button>
-    	<button id = "menu" class="btn" onclick="location.href='./menu-Ferris.html';">Menu</button>
+      <button id = "menu" class="btn" onclick="location.href='./menu-Ferris.html';">Menu</button>
+
+      <div class="bar background"></div>
     </div>
   </div>
 </div>

@@ -65,6 +65,12 @@ search bar image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSjgfREC
     cursor: pointer;
   }
 
+  .dish_search {
+    margin: 5px;
+    margin-top: 1px;
+  }
+
+
 </style>
 </head>
 <body>
@@ -78,9 +84,13 @@ search bar image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSjgfREC
   		<span class="navitem active" onclick="location.href='./search.html';">Search</span>
   	</div>
 
-    <h1>Search</h1>
+    <h1 style="margin:5px;">Search</h1>
+    <hr class="shadow">
 
-    <div class = "txt">Search for a dish:</div>
+    <div class="txt dish_search">Search for a dish:</div>
+    <div class="background"></div>
+
+
     <img class = "search-bar" src = "./img/searchbar.png">
     <form action = "./searchfood.html">
     <input class = "search-text" placeholder="Search">
