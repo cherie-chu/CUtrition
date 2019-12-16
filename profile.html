@@ -8,21 +8,26 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  padding-bottom: 80px
+  width: 35%;
+  padding-bottom: 80px;
+  margin-top: 10px;  
 }
+
 #name{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0;
 }
-#favorites{
+/*#favorites{
   text-decoration: underline;
-}
+
 #allergies{
   text-decoration: underline;
-}
+}*/
 .btn{
   background: #1D497D;
   border: 1px solid #1D497D;
@@ -36,10 +41,11 @@
 }
 .text{
   font-family: 'Montserrat', sans-serif;
-  padding-top: 10px;
+  /*padding-top: 10px;*/
   padding-left: 10px;
+  padding-bottom: 2px;
   font-weight: 700;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 #menu{
   display: block;
@@ -57,6 +63,7 @@
 .menu-img{
   width: 71px;
   height: 60px;
+  box-shadow: 2px 2px 5px grey;
 }
 .contains{
   overflow:hidden;
@@ -79,6 +86,7 @@
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 9px;
+  font-weight: bold;
   color: red;
   transform: translate(-15px,-110px);
 }
@@ -138,6 +146,18 @@
 .menu-content{
   transform: translateY(-80px);
 }
+
+.shadow {
+  height: 5px;
+  border: 0;
+  box-shadow: inset 0 5px 5px -5px rgba(0, 0, 0, 0.2);
+}
+
+.background {
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.1); 
+}
+
 </style>
 </head>
 <body>
@@ -154,15 +174,20 @@
     
 
 <div class="info one">
-      <img id=profilepicture src=./img/smile.png></img> 
+      <img id=profilepicture src="img/round-account-button-with-user-inside.png"></img> 
        <div class="menu-content">
-      <div id="name" class="text">Name Here</div>
+      <div id="name" class="text">Sammy Jones</div>
+
+      <div class="background"></div>
+
+      <hr class="shadow">
        <div id="favorites" class = "text">Favorites</div>
+      <hr class="shadow">
        <div class="contains over">
        <div class = "box image1">
          <img class = "menu-new info-three menu-img" src = "./img/meatloaf.png" onclick="location.href='./searchfood.html';">
          <div class = "menu-new info-three new-text">Meatloaf</div>
-         <div class = "menu-new info-three alert">Contains meat</div>
+         <div class = "menu-new info-three alert">contains meat</div>
        </div>
        <div class = "box image2">
          <img class = "menu-new info-three menu-img" src = "./img/ricepilaf.png"onclick="location.href='./searchfood.html';">
@@ -178,13 +203,68 @@
        </div>
       </div>
 
-       <div id="allergies" class = "text">Allergy List</div>
-       <ul>
-          <li>Beef</li>
-          <li>Rice</li>
-          <li>Corn</li>
-          <li>Vegetables</li>
-        </ul>
+      <div class="background"></div>
+
+      <div>
+        <div>
+          <hr class="shadow">
+          <div class="text">Allergies</div>
+          <hr class="shadow">
+        </div class="shadow">
+        
+        <div class="contains over">
+          <div class = "box image1">
+            <!--https://www.google.com/search?q=gluten&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjZubqF_7jmAhVjhuAKHQmlA2EQ_AUoAnoECBEQBA&biw=1698&bih=1051#imgrc=TpfWWwavT5nQ-M:-->
+            <img class = "menu-new info-three menu-img" src = "./img/gluten.jpg" onclick="location.href='./searchfood.html';">
+            <div class = "menu-new info-three new-text">Gluten</div>
+          </div>
+          <div class = "box image2">
+            <!--https://www.google.com/search?biw=1698&bih=1051&tbm=isch&sa=1&ei=RN72Xez4H6-IggeL4rzQDA&q=lactose+free&oq=lactose+free&gs_l=img.3..0l10.104543.105091..105190...1.0..0.80.440.8......0....1..gws-wiz-img.......0i67.UyNFokKLxQE&ved=0ahUKEwjsqqTIgrnmAhUvhOAKHQsxD8oQ4dUDCAc&uact=5#imgrc=kV8eAjOM3K9hfM:-->
+            <img class = "menu-new info-three menu-img" src = "./img/lactose.jpg"onclick="location.href='./searchfood.html';">
+            <div class = "menu-new info-three new-text">Lactose</div>
+          </div>
+          <div class = "box image3">
+            <!--https://www.google.com/search?biw=1698&bih=1051&tbm=isch&sa=1&ei=JNz2XZ-wLuim_Qb0_pv4CA&q=peanuts&oq=peanuts&gs_l=img.3..0l10.1070.1070..1180...0.0..0.52.148.3......0....1..gws-wiz-img.......0i10j0i7i30j0i7i10i30j0i10i24.n5fo8RvV5uE&ved=0ahUKEwif0v_EgLnmAhVoU98KHXT_Bo8Q4dUDCAc&uact=5#imgrc=A_fQnW99OWmEfM:-->
+            <img class = "menu-new info-three menu-img" src = "./img/peanuts.jpg"onclick="location.href='./searchfood.html';">
+            <div class = "menu-new info-three new-text">Peanuts</div>
+          </div>
+          <div class = "box image4">
+            <!--https://www.google.com/search?q=shellfish+allergy&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjFvo6AgbnmAhWwmOAKHYxnAJwQ_AUoAXoECA8QAw&biw=1698&bih=1051#imgrc=swDpzYlZ2bkLLM:-->
+            <img class = "menu-new info-three menu-img" src = "./img/shellfish.jpg"onclick="location.href='./searchfood.html';">
+            <div class = "menu-new info-three new-text">Shellfish</div>
+          </div>
+        </div>
+
+      <div class="background"></div>
+
+      <div>
+        <hr class="shadow">
+        <div class="text">Friends</div>
+        <hr class="shadow">
+      </div class="shadow">
+      
+      <div class="contains over">
+        <div class = "box image1">
+          <!--https://www.google.com/search?q=gluten&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjZubqF_7jmAhVjhuAKHQmlA2EQ_AUoAnoECBEQBA&biw=1698&bih=1051#imgrc=TpfWWwavT5nQ-M:-->
+          <img class = "menu-new info-three menu-img" src = "./img/gluten.jpg" onclick="location.href='./searchfood.html';">
+          <div class = "menu-new info-three new-text">George G.</div>
+        </div>
+        <div class = "box image2">
+          <!--https://www.google.com/search?biw=1698&bih=1051&tbm=isch&sa=1&ei=RN72Xez4H6-IggeL4rzQDA&q=lactose+free&oq=lactose+free&gs_l=img.3..0l10.104543.105091..105190...1.0..0.80.440.8......0....1..gws-wiz-img.......0i67.UyNFokKLxQE&ved=0ahUKEwjsqqTIgrnmAhUvhOAKHQsxD8oQ4dUDCAc&uact=5#imgrc=kV8eAjOM3K9hfM:-->
+          <img class = "menu-new info-three menu-img" src = "./img/lactose.jpg"onclick="location.href='./searchfood.html';">
+          <div class = "menu-new info-three new-text">Meera M.</div>
+        </div>
+        <div class = "box image3">
+          <!--https://www.google.com/search?biw=1698&bih=1051&tbm=isch&sa=1&ei=JNz2XZ-wLuim_Qb0_pv4CA&q=peanuts&oq=peanuts&gs_l=img.3..0l10.1070.1070..1180...0.0..0.52.148.3......0....1..gws-wiz-img.......0i10j0i7i30j0i7i10i30j0i10i24.n5fo8RvV5uE&ved=0ahUKEwif0v_EgLnmAhVoU98KHXT_Bo8Q4dUDCAc&uact=5#imgrc=A_fQnW99OWmEfM:-->
+          <img class = "menu-new info-three menu-img" src = "./img/peanuts.jpg"onclick="location.href='./searchfood.html';">
+          <div class = "menu-new info-three new-text">Lina L.</div>
+        </div>
+        <div class = "box image4">
+          <!--https://www.google.com/search?q=shellfish+allergy&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjFvo6AgbnmAhWwmOAKHYxnAJwQ_AUoAXoECA8QAw&biw=1698&bih=1051#imgrc=swDpzYlZ2bkLLM:-->
+          <img class = "menu-new info-three menu-img" src = "./img/shellfish.jpg"onclick="location.href='./searchfood.html';">
+          <div class = "menu-new info-three new-text">Danny D.</div>
+        </div>
+      </div>
        
       </div>
      </div>
