@@ -3,61 +3,114 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="cutrition.css">
-<style>
-  .btn{
-    position: absolute;
-    background: #1D497D;
-    border: 1px solid #1D497D;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-  }
-  .btn:hover{
-    background: #5ca3f7;
-    border: 1px solid #5ca3f7;
-  }
-  #foodpicture{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-#foodname{
-  padding-top:3%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-#nutrition{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<style>
+	.btn{
+		background: #1D497D;
+		border: 1px solid #1D497D;
+		font-family: 'Montserrat', sans-serif;
+		color: white;
+		cursor: pointer
+	}
+	.btn:hover{
+		background: #5ca3f7;
+		border: 1px solid #5ca3f7;
+	}
+	.back {
+		position: absolute;
+		margin: 10px 10px;
+	}
+	.remove {
+		margin: 10px 53px 0px 53px;
+	}
+	#foodpicture{
+		display: block;
+		margin: 10px auto;
+		width: 85%;
+	}
+	#foodname{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
+	#nutrition{
+		display: block;
+		margin: 15px auto;
+		width: 89%;
+	}
+	#override {
+		height: 375px;
+	}
+	.rating {
+		display: inline-block;
+		margin: 10px 79px 0px 79px;
+	}
+	.checked {
+		color: #5ca3f7;
+	}
+	.text{
+		font-family: 'Montserrat', sans-serif;
+		margin: 25px 20px 10px 20px;
+		font-weight: 700;
+		text-decoration: underline;
+	}
+	.list {
+		font-family: 'Montserrat', sans-serif;
+		margin: 0px 20px 25px 20px;
+		font-size: 13px;
+	}
+	.red {
+		color: red;
+		font-weight: 600;
+	}
 </style>
 </head>
 <body>
 
 <div class="smartphone">
-  <div class="content">
+	<div class="content">
 
-  	<div class="nav">
-  		<span class="navitem" onclick="location.href='./profile.html';">Profile</span>
-  		<span class="navitem" onclick="location.href='./halls.html';">Halls</span>
-  		<span class="navitem active" onclick="location.href='./search.html';">Search</span>
-  	</div>
+	<div class="nav">
+		<span class="navitem" onclick="location.href='./profile.html';">Profile</span>
+		<span class="navitem" onclick="location.href='./halls.html';">Halls</span>
+		<span class="navitem active" onclick="location.href='./search.html';">Search</span>
+	</div>
 
-    <h1>Meatloaf</h1>
+	<button class = "back btn" onclick="location.href='./search.html';">back</button>
+	<h1 style="margin:5px;">Meatloaf</h1>
+	<hr class="shadow">
 
-    <div class="info one">
-    	<button class = "btn" onclick="location.href='./search.html';">back</button>
-    	<img id="foodpicture" src="./img/meatloaf.png"></img>
-    	<img id="nutrition" src="./img/meatloafnutrition.png"></img>
-    </div>
+	<div class="info one" id="override">
+		<div class="rating">
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star"></span>
+		</div>
+		<button class="remove btn">Remove from favorites</button>
+		<img id="foodpicture" src="./img/meatloaf.png"></img>
+
+		<div class="text">RESTRICTIONS</div>
+		<div class="list red">
+		Contains meat
+		</div>
+
+		<div class="text">INGREDIENTS</div>
+		<div class="list">
+			Ground beef, Panko bread crumbs, ketchup, minced onion, 
+			egg, Worcestershire sauce, minced garlic, dried thyme leaves,
+			pepper, salt
+		</div>
+
+		<img id="nutrition" src="./img/meatloafnutrition.png"></img>
+
+	</div>
 
 
-  </div>
+	</div>
 </div>
 
 </body>
