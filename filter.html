@@ -4,6 +4,60 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="cutrition.css">
 <style>
+  .btn{
+    position: absolute;
+    background: #1D497D;
+    border: 1px solid #1D497D;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    cursor: pointer
+  }
+  .btn:hover{
+    background: #5ca3f7;
+    border: 1px solid #5ca3f7;
+  }
+  .cancel {
+    margin-top: 348px;
+    margin-left: 140px;
+  }
+  .save {
+    margin-top: 348px;
+    margin-left: 200px;
+  }
+  .text{
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  .select {
+    width: 80%;
+    margin: 0px auto 10px auto;
+    overflow-y: scroll;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+  }
+  #override {
+    height: 340px;
+  }
+  .search-bar{
+    width: 220px;
+    height: 95px;
+    margin-left: 17px;
+    transform: translateY(-20px);
+  }
+  .search-text {
+    width: 150px;
+    height: 20px;
+    transform: translate(42px,-85px);
+    font-family: 'Montserrat', sans-serif;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .choices {
+    margin-top: -80px;
+  }
+
 </style>
 </head>
 <body>
@@ -17,11 +71,74 @@
   		<span class="navitem" onclick="location.href='./search.html';">Search</span>
   	</div>
 
-    <h1>Filter</h1>
+    <h1 style="margin:5px;">Filter</h1>
+    <hr class="shadow">
 
-    <div class="info one">
-      <button onclick="location.href='./menu.html';">cancel</button>
-      <button onclick="location.href='./menu.html';">save</button>
+    <div class="info one" id="override">
+      <button class="btn cancel" onclick="location.href='./menu.html';">cancel</button>
+      <button class="btn save" onclick="location.href='./menu.html';">save</button>
+
+      <img class = "search-bar" src = "./img/searchbar.png">
+      <input class = "search-text" placeholder="Search">
+
+      <div class="choices">
+      <div class="text">TYPE</div> 
+      <div class="select">
+        <input type="checkbox"> Appetizer<br>
+        <input type="checkbox"> Dessert<br>
+        <input type="checkbox"> Drink<br>
+        <input type="checkbox"> Entree<br>
+        <input type="checkbox"> Side<br>
+      </div>
+
+      <div class="text">RESTRICTIONS</div>
+      <div class="select">
+        <input type="checkbox"> Gluten-Free<br>
+        <input type="checkbox"> Halal<br>
+        <input type="checkbox"> Kosher<br>
+        <input type="checkbox"> Pescatarian<br>
+        <input type="checkbox"> Vegan<br>
+        <input type="checkbox"> Vegetarian<br>
+      </div>
+
+      <div class="text">AVOID</div>
+      <div class="select">
+        <input type="checkbox"> Beef<br>
+        <input type="checkbox"> Chicken<br>
+        <input type="checkbox"> Cilantro<br>
+        <input type="checkbox"> Dairy<br>
+        <input type="checkbox"> Eggs<br>
+        <input type="checkbox"> Fish<br>
+        <input type="checkbox"> Fruit<br>
+        <input type="checkbox"> MSG<br>
+        <input type="checkbox"> Peanuts<br>
+        <input type="checkbox"> Pork<br>
+        <input type="checkbox"> Shellfish<br>
+        <input type="checkbox"> Soy<br>
+        <input type="checkbox"> Sugar<br>
+        <input type="checkbox"> Tree Nuts<br>
+        <input type="checkbox"> Wheat<br>
+      </div>
+
+      <div class="text">INCLUDE</div>
+      <div class="select">
+        <input type="checkbox"> Beef<br>
+        <input type="checkbox"> Chicken<br>
+        <input type="checkbox"> Cilantro<br>
+        <input type="checkbox"> Dairy<br>
+        <input type="checkbox"> Eggs<br>
+        <input type="checkbox"> Fish<br>
+        <input type="checkbox"> Fruit<br>
+        <input type="checkbox"> MSG<br>
+        <input type="checkbox"> Peanuts<br>
+        <input type="checkbox"> Pork<br>
+        <input type="checkbox"> Shellfish<br>
+        <input type="checkbox"> Soy<br>
+        <input type="checkbox"> Sugar<br>
+        <input type="checkbox"> Tree Nuts<br>
+        <input type="checkbox"> Wheat<br>
+      </div>
+      </div>
     </div>
 
   </div>
