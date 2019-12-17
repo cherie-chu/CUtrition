@@ -5,6 +5,27 @@
 <link rel="stylesheet" type="text/css" href="cutrition.css">
 <style>
 
+  .btn{
+    position: absolute;
+    background: #1D497D;
+    border: 1px solid #1D497D;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    transform: translate(175px,0px);
+    margin-top: 315px
+  }
+  .btn:hover{
+    background: #5ca3f7;
+    border: 1px solid #5ca3f7;
+    cursor: pointer;
+  }
+
+  .back {
+    position: absolute;
+    margin-top: 16px;
+    margin-left: -164px;
+  }
+
 	.user_icon {
 		width: 25px;
 		float: left;
@@ -22,6 +43,7 @@
 	.blog_post {
 		height: 20px;
 		padding: 10px;
+    cursor: pointer;
 	}
 
 	.add_post {
@@ -29,7 +51,6 @@
 		margin-left: 200px;
 		margin-top: 292px;
 		width: 40px;
-		
 	}
 
 	.add_post:active {
@@ -97,6 +118,7 @@
   		<span class="navitem" onclick="location.href='./search.html';">Search</span>
   	</div>
 
+    <button class="back btn" onclick="location.href='./menu.html';">Back</button>
     <h1>Blog</h1>
 
     <div class="nav">
@@ -109,13 +131,15 @@
 
 		<!--post button-->
 		<!--<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
-		<div>
+		<!--<div>
 			<img class="add_post" src="./img/plus.png" onclick="location.href='./post.html';">
-		</div>
+		</div>-->
+
+    <button class="btn" onclick="location.href='./post.html';">Add Post</button>
 
 		<!--Posts-->
 		<!--<div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
-		<hr>
+		<!--<hr>-->
 		<div onclick="location.href='./blogPost.html';" class="blog_post">
 			<img class="user_icon" src="img/round-account-button-with-user-inside.png" alt="User Icon">
 			<h5 class="blog_title">I found WHAT in my food??</h5>

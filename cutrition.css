@@ -1,3 +1,5 @@
+/* source: https://www.w3schools.com/howto/howto_css_devices.asp */
+
 .smartphone {
   position: relative;
   width: 250px;
@@ -61,20 +63,19 @@
 .info-three {
   overflow: scroll;
   margin: 10px;
-  height: 100px;
   width: 100px;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
 }
 
 .active {
-  color: #A4B6CB;
+  color: white;
 }
 
 .nav {
   font-family: 'Montserrat', sans-serif;
   background-color: #1D497D;
-  color: white;
+  color: #A4B6CB;
   font-weight: 500;
 }
 

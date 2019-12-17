@@ -51,7 +51,9 @@
     }
 
     .article {
-    margin: 10px;
+    margin: 15px;
+    font-weight: 400;
+    font-size: 11px;
     }
 
     .all_comments {
@@ -85,8 +87,31 @@
     }
 
     .back_comment {
-        height:85px;
+        height:10px;
     }
+
+    .back {
+        position: absolute;
+        margin: 16px 8px;
+    }
+
+    .add {
+        margin-left: 105px;
+        transform: translate(0px, -3px);
+    }
+
+    .btn{
+        background: #1D497D;
+        border: 1px solid #1D497D;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        
+      }
+      .btn:hover{
+        background: #5ca3f7;
+        border: 1px solid #5ca3f7;
+        cursor: pointer;
+      }
 
 </style>
 </head>
@@ -100,7 +125,7 @@
   		<span class="navitem active" onclick="location.href='./halls.html';">Halls</span>
   		<span class="navitem" onclick="location.href='./search.html';">Search</span>
   	</div>
-
+    <button class="back btn" onclick="location.href='./blog.html';">Back</button>
     <h1>Blog</h1>
 
     <div class="nav">
@@ -112,7 +137,11 @@
     <div class="info two">
 
         <!--<div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+
         <hr>
+
+        
+
         <div class="blog_post">
             <img class="user_icon" src="img/round-account-button-with-user-inside.png" alt="User Icon">
             <h5 class="blog_title">I found WHAT in my food??</h5>
@@ -121,21 +150,12 @@
         <hr class="blogdiv shadow">
 
         <p class="article">
-            <span class="tab"></span> 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
+            So I was eating at Ferris earlier today and there was a 
+            THUMBTACK in the green beans. Of course, I posted it on Buy Sell and it got a bunch of likes,
+            but dude, that's actually pretty dangerous.
         </p>
         <p class="article">
-            <span class="tab"></span> 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur
-            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
+            I don't know about you, but I'm not looking to get a tongue piercing anytime soon.
         </p>
 
         <div class="background back_comment"></div>
@@ -143,7 +163,7 @@
         <div class="comment_bar">
             <hr class="shadow">
             <h5 class="blog_title" style="margin:5px;">Comments</h5>
-            <button style="float:right">Add</button>
+            <button class="add btn">Add</button>
         </div>
         <hr class="shadow">
         <div class="all_comments">
@@ -219,12 +239,12 @@
         $(".comment_bar").click(function() {
             if (commentOn) {
                 commentOn = false;
-                $(".back_comment").css("height", "85px");
+                $(".back_comment").css("height", "10px");
                 $(".all_comments").css("display", "none");
                 
             } else {
                 commentOn = true; 
-                $(".back_comment").css("height", "65px");
+                $(".back_comment").css("height", "10px");
                 $(".all_comments").css("display", "block");
             }
         });

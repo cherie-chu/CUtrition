@@ -17,6 +17,7 @@
 
 	.title_input {
 		font-family: 'Montserrat', sans-serif;
+    color: red;
 		display: inline-block;
 		/*float: right;*/
 		margin: 0px;
@@ -45,6 +46,24 @@
 		height: 20px;
 		padding: 10px;
   }
+
+  .btn{
+    position: absolute;
+    background: #1D497D;
+    border: 1px solid #1D497D;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    transform: translate(203px,0px);
+    margin-top: 315px
+  }
+  .btn:hover{
+    background: #5ca3f7;
+    border: 1px solid #5ca3f7;
+    cursor: pointer;
+  }
+  .cancel {
+    transform: translate(143px,0px);
+  }
   
   input[type="text"] {
     font: 15px/24px 'Montserrat', sans-serif; 
@@ -56,11 +75,6 @@
 
   input:focus, textarea:focus {
     outline: none;
-  }
-
-  .post_button {
-    margin-left: 118.5px;
-    margin-top: 135px;
   }
 
 
@@ -86,19 +100,16 @@
   	</div>
 
     <div class="info two">
-
-
+      <button class="btn cancel" onclick="location.href='./blog.html';">Cancel</button>
+      <button class="btn" onclick="location.href='./blog.html';">Post</button>
       <div class="blog_post">
         <img class="user_icon" src="img/round-account-button-with-user-inside.png" alt="User Icon">
         <input class="title_input" type="text" placeholder="Your Title">
       </div>
 
       <div>
-          <textarea rows="100" cols="50" class="article_input" type="text" placeholder="What's on your mind?"></textarea>
+          <textarea rows="10" cols="34" class="article_input" type="text" placeholder="What's on your mind?"></textarea>
       </div>
-      
-
-      <button class="post_button" onclick="location.href='./blog.html';">Post</button>
     </div>
 
   </div>

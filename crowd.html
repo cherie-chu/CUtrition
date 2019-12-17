@@ -12,6 +12,7 @@
     font-family: 'Montserrat', sans-serif;
     color: white;
     transform: translate(10px, 300px);
+    cursor: pointer;
   }
   .btn:hover{
     background: #5ca3f7;
@@ -50,6 +51,30 @@
   .scroll{
     overflow-x: hidden;
   }
+
+  .back {
+    position: absolute;
+    margin-top: -284px;
+  }
+  .loadbar-outline {
+    border-radius: 25px;
+    border: 1px solid black;
+    height: 7px;
+    margin: 5px 15px 0px 15px;
+  }
+  #loadbar {
+    border-radius: 100px;
+    width: 70%;
+    height: 7px;
+    background-color: #186EC0;
+    margin: -8px 15px 10px 15px;
+  }
+  .percent {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    margin-left: 167px;
+    margin-top: 15px;
+  }
 </style>
 </head>
 <body>
@@ -62,6 +87,7 @@
   		<span class="navitem" onclick="location.href='./search.html';">Search</span>
   	</div>
 
+    <button class="back btn" onclick="location.href='./menu.html';">Back</button>
     <h1>Crowd</h1>
 
     <div class="nav">
@@ -71,9 +97,11 @@
   	</div>
 
     <div class="info two scroll">
-      <div class="category-txt">TODAY</div>
+      <div class="category-txt">NOW</div>
       <div class="open weekly-txt">Open</div>
-      <img class= "wait-today" src = "./img/wait-today.png">
+      <div class="percent">80% full</div>
+      <div class="loadbar-outline"></div>
+      <div id="loadbar"></div>
       <div class="category-txt">WEEKLY</div>
       <div class="weekly-txt">Monday</div>
       <img class="weekly" src="./img/monday.png">
@@ -88,7 +116,7 @@
       <div class="weekly-txt">Saturday</div>
       <img class="weekly" src="./img/saturday.png">
       <div class="weekly-txt">Sunday</div>
-      <div class="closed weekly-txt">Closed on Sunday's</div>
+      <div class="closed weekly-txt">Closed on Sunday</div>
     </div>
 
   </div>
